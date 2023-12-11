@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Inter:wght@100;300;400;500&family=Montserrat:wght@100;300;400;500;700&display=swap');
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+:root {
+  height: 100%;
+  /* width: 100%; */
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+* {
+  font-family: 'Inter', sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+  scrollbar-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: #a7aab1;
+}
+
+input,
+span {
+  font-family: 'Inter', sans-serif;
+}
+h1,
+p {
+  line-height: normal;
+}
+
+.vist_form .ant-form-item .ant-col label {
+  @apply text-blue_color;
+}
+.vist_form .ant-form-item .ant-col label,
+.campaign_form * label {
+  @apply text-blue_color !important;
+}
+
+.vist_form
+  *.ant-form-item.daily_clicks
+  *.ant-form-item-row
+  .ant-col
+  input[type='number'] {
+  appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+.vist_form
+  *.ant-form-item.daily_clicks
+  *.ant-form-item-row
+  .ant-col
+  input::-webkit-outer-spin-button,
+.vist_form
+  *.ant-form-item.daily_clicks
+  *.ant-form-item-row
+  .ant-col
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.warningIcon {
+  color: #faad14;
+}
+.successIcon {
+  color: #52c41a;
+}
+.infoIcon {
+  color: #1677ff;
+}
+.errorIcon {
+  color: #ff4d4f;
+}
+
+.calendar {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-body {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weekday {
+  width: 100px;
+  text-align: center;
+}
+
+.table-content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.calendar-day {
+  width: 125px;
+  height: 75px;
+  position: relative;
+  border: 1px solid #a6a6a6;
+}
+
+.calendar-day:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff67;
+}
+
+.calendar-day p {
+  position: absolute;
+  right: 10px;
+  color: #a6a6a6;
+}
+
+.current p {
+  color: #000000;
+}
+
+.selected p {
+  color: #cc0000;
+  font-weight: bold;
+}
+.clishq_card {
+  background-image: url(./assets//img/clisha_card_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.other_input::placeholder {
+  color: white;
+}
+
+.question_radio * .ant-space-item label {
+  color: white !important;
+}
